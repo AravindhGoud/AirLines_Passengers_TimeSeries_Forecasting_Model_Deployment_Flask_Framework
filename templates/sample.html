@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color: lightblue;
+      }
+      form {
+        text-align: center;
+      }
+      h1 {
+			text-align: center;
+		}
+    </style>
+  </head>
+  <body>
+            <h1>AIR PASSENGERS TIME SERIES FORECASTING MODEL</h1>
+    <form action="/predict" method="post">
+      <select name="month_year">
+        <option value="1">Jan-2003</option>
+        <option value="2">Feb-2003</option>
+        <option value="3">Mar-2003</option>
+        <option value="4">Apr-2003</option>
+        <option value="5">May-2003</option>
+        <option value="6">Jun-2003</option>
+        <option value="7">Jul-2003</option>
+        <option value="8">Aug-2003</option>
+        <option value="9">Sep-2003</option>
+        <option value="10">Oct-2003</option>
+        <option value="11">Nov-2003</option>
+        <option value="12">Dec-2003</option>
+        <option value="13">Jan-2004</option>
+        <option value="14">Feb-2004</option>
+        <option value="15">Mar-2004</option>
+        <option value="16">Apr-2004</option>
+        <option value="17">May-2004</option>
+        <option value="18">Jun-2004</option>
+        <option value="19">Jul-2004</option>
+        <option value="20">Aug-2004</option>
+        <option value="21">Sep-2004</option>
+        <option value="22">Oct-2004</option>
+        <option value="23">Nov-2004</option>
+        <option value="24">Dec-2004</option>
+      </select>
+      <br><br>
+      <input type="submit" value="predict!">
+    </form>
+  </body>
+</html>
