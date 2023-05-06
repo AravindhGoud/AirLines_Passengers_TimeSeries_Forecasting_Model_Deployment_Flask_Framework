@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color: lightblue;
+      }
+      h1 {
+        text-align: center;
+      }
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>AIR PASSENGERS TIME SERIES FORECASTING MODEL</h1>
+    <h4> @Author Sydugari Aravindh Goud, Data Scientist </h4>
+    <table>
+      <tr>
+        <th>Date</th>
+        <th>Passengers</th>
+      </tr>
+      {% for index, row in prediction.iterrows() %}
+      <tr>
+        <td>{{ index.date() }}</td>
+        <td>{{ row['Passengers'] }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
